@@ -99,7 +99,8 @@ def get_data():
         
         return jsonify(result)
 
-@app.route('/api/stats')
+
+@app.route('/api/stats') 
 def get_stats():
     """Get statistics"""
     with data_lock:
